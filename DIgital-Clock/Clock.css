@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 70vh;
+}
+.clock{
+    background-color: orange;
+    padding: 10px;
+    min-width: 20%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+}

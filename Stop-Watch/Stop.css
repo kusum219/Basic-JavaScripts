@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.stopWatch{
+    width: 90%;
+    max-width: 600px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin: 200px auto 0;
+    box-shadow: 0 10px 10px rgb(0,0,0,0.2);
+    border-radius: 20px;
+}
+.stopWatch h1{
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.stopWatch .buttons{
+    margin-top: 20px;
+}
+.stopWatch i{
+    width: 50px;
+    margin: 0 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.stopWatch i:nth-child(2){
+    width: 80px;
+    color: rgb(218, 85, 85);
+    font-size: 50px;
+}

@@ -1,0 +1,72 @@
+body{
+    background-color: #06064b;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.fa-paper-plane{
+    background-color: rgb(7, 211, 133);
+    font-size: 50px;
+    width: 12%;
+    margin-top: -50px;
+    min-height: 16%;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+}
+.form{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    padding: 10px;
+    margin: 10px;
+}
+.input-group{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+input,textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    width: 80%;
+}
+button{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(7, 211, 133);
+    color: white;
+    border: none;
+    outline: none;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+.input-group span{
+    position: absolute;
+    right: 400px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}
+.input-group span i{
+    color: seagreen;
+}

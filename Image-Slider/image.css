@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+.slides{
+    padding: 10px;
+    margin: 10px;
+}
+.slider .slides img{
+    max-width: 50%;
+    max-height: 1000%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+.slider .slides .displaySlide{
+    display: block;
+}
+.btn{
+    width: 100%;
+}
+.btn button{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    width:20%;
+
+}

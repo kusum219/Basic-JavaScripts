@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Background Color</title>
+    <style>
+        .light{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        .dark{
+            background-color: rgb(5, 5, 5);
+            color: rgb(226, 204, 204);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 70vh;
+            padding: 0px 30px;
+        }
+        .container h1{
+            font-size: 50px;
+        }
+        .container h1 span{
+            color: aquamarine;
+        }
+        .container button{
+            width: 30%;
+            padding: 10px 10px;
+            background-color: greenyellow;
+            color: rgb(90, 87, 87);
+            border-radius: 10px;
+            font-size: 20px;
+            outline: none;
+            border: none;
+        }
+        @media (max-width: 400px) {
+            .container button{
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body class="light">
+    <div class="container">
+        <h1>Changer you <br><span>Background Color</span></h1>
+        <button id="button">Changer the color</button>
+    </div>
+
+    <script>
+        let body = document.getElementsByClassName("light");
+        let button = document.getElementById("button");
+
+        button.addEventListener("click", function(e){
+            document.body.classList.toggle("dark")
+        })
+    </script>
+</body>
+</html>

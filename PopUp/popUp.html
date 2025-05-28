@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="Popup.css">
+    <script src="https://kit.fontawesome.com/f6e1ca432e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPop()">Submmit</button>
+
+        <div class="popup" id="popup">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <h2>Thank you!</h2>
+            <p>Your details has been sucessfullt submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPop(){
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
+    </script>
+</body>
+
+</html>

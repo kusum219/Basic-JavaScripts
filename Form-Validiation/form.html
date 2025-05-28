@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validiation</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/f6e1ca432e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+    <div class="form">
+       <i class="fa fa-paper-plane" aria-hidden="true"></i>
+       
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input id="contact-name" onkeyup="validateName()" type="text" placeholder="Enter your name">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phoner No</label>
+                <input id="contact-phone" onkeyup="validatePhone()" type="tel" placeholder="123 456 7890">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input id="contact-email" onkeyup="validateEmail()" type="tel" type="email" placeholder="Enter Email">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea id="contact-message" onkeyup="validateMessage()" rows="5" placeholder="Enter your message"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <button onclick="return validateForm()">Submmit</button>
+           <br> <span id="submit-error"></span>
+            
+      
+    </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
